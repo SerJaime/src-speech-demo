@@ -2,14 +2,14 @@
   "name": "rsc-speech-demo",
   "private": true,
   "scripts": {
+    "demo:start": "pnpm --filter=demo run start",
+    "next-demo:dev": "pnpm --filter=next-demo run dev",
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "prettier": "^3.1.1",
     "turbo": "latest"
   },
